@@ -5,6 +5,13 @@ Verilog-based TOOM-5 multiplier for 1024-bit integers. Efficient for large numbe
 
 This project implements the TOOM-5 multiplication algorithm in Verilog for high-speed multiplication of two 1024-bit unsigned integers. The algorithm splits each input into 5 parts, evaluates at 9 points, performs pointwise multiplication, and reconstructs the result using interpolation. This is ideal for cryptography and digital hardware acceleration.
 <br>
+## Features
+
+- Supports 1024-bit × 1024-bit multiplication. 
+- Fully synthesizable Verilog design.  
+- Optimized using polynomial evaluation and shift-based interpolation. 
+- Testbench included with waveform output.
+- 
 ##  How It Works
 
 1. **Splitting**: Each 1024-bit input is split into 5 parts (205 bits each).
